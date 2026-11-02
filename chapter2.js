@@ -1,0 +1,1 @@
+window.DM = window.DM || {};

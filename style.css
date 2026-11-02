@@ -1,0 +1,16 @@
+* { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+body, html { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: sans-serif; }
+#game-container { width: 100%; height: 100%; position: relative; }
+#renderCanvas { width: 100%; height: 100%; display: block; touch-action: none; }
+#ui-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+#hud { position: absolute; top: 15px; left: 15px; color: #fff; text-shadow: 1px 1px 2px #000; font-size: 14px; pointer-events: auto; }
+#chapter-title { font-weight: bold; margin-bottom: 5px; color: #ff4444; }
+#touch-controls { position: absolute; width: 100%; height: 100%; pointer-events: none; }
+#joystick-zone { position: absolute; bottom: 30px; left: 30px; width: 120px; height: 120px; background: rgba(255,255,255,0.1); border-radius: 50%; pointer-events: auto; }
+#joystick-stick { position: absolute; top: 35px; left: 35px; width: 50px; height: 50px; background: rgba(255,255,255,0.3); border-radius: 50%; }
+#action-buttons { position: absolute; bottom: 30px; right: 30px; display: flex; gap: 10px; pointer-events: auto; }
+.touch-btn { background: rgba(0,0,0,0.6); color: #fff; border: 1px solid #555; padding: 12px 18px; border-radius: 8px; font-weight: bold; font-size: 12px; }
+.hidden { display: none !important; }
+#modal-view, #audio-modal { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; pointer-events: auto; z-index: 100; }
+#modal-content, #audio-content { background: #1a1a1a; color: #fff; padding: 25px; border-radius: 10px; width: 80%; max-width: 500px; border: 1px solid #444; text-align: center; }
+#modal-close, #audio-close, #btn-play-audio { margin-top: 15px; padding: 8px 16px; background: #c0392b; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
